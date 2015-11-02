@@ -10,6 +10,13 @@ import com.jfranceschini.rolodex.GenderType;
 import com.jfranceschini.rolodex.PhoneNumber;
 import com.jfranceschini.rolodex.PhoneNumberType;
 
+/**
+ * RoloDexDriver
+ * 
+ * Makes use of the Address
+ * @author abacus
+ *
+ */
 public class RoloDexDriver {
 	public static void main(String[] args) {
 		// Construct Address
@@ -51,6 +58,7 @@ public class RoloDexDriver {
 
 	    // BONUS SECTION
 	    // Test Relation
+	    System.out.println("Relation Test");
 	    ContactInformation sallyBourne = new ContactInformation("Sally", "Bourne", frontStreetAddress,
 	        jasonBusinessPhone, GenderType.BLANK);
 	    if (ContactInformation.isRelated(jasonBourne, williamWallace)) {
@@ -62,6 +70,7 @@ public class RoloDexDriver {
 	      System.out.println("They are brother and sister.");
 	    }
 	    // Test Roommates
+	    System.out.println("Roommate test");
 	    ContactInformation scubaSteve = new ContactInformation("Scuba", "Steve", address1, phoneNumber, GenderType.MALE);
 	    // Passing the roommate test
 	    if (ContactInformation.isRoomates(firstEntry,  scubaSteve)) {
