@@ -13,8 +13,10 @@ import com.jfranceschini.rolodex.PhoneNumberType;
 /**
  * RoloDexDriver
  * 
- * Makes use of the Address
- * @author abacus
+ * Makes use of the Address, PhoneNumber, ContactInfomation classes
+ * to test out the rolodex application.
+ * 
+ * @author Jesse Franceschini
  *
  */
 public class RoloDexDriver {
@@ -83,9 +85,6 @@ public class RoloDexDriver {
 	    	System.out.println("They are not roommates.");
 	    }
 	    
-	    // ADD CODE HERE TO TEST isRoomates method
 	    System.out.println("End Ouput");
-	    
-	    /* If you would like to add more tests enter them here */
 	}
 }
